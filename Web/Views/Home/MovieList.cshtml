@@ -1,0 +1,121 @@
+﻿@{
+    ViewBag.Title = "MovieList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/common/public.css" rel="stylesheet" />
+<link href="~/css/recent/recent.css" rel="stylesheet" />
+<div id="cont-output">
+    @using (Html.BeginForm("MovieList", "Home", FormMethod.Get, new { enctype = "multipart/form-data" }))
+    {
+        <div>
+            <div class="guideregion">
+                <div class="guidetit">
+                    <h4>
+                        Genre：
+                        <select name="mtype" style="height:35px;">
+                            <option>All</option>
+                            <option>Romance</option>
+                            <option>Science fiction</option>
+                            <option>Comedy</option>
+                            <option>Military</option>
+                            <option>Horror</option>
+                            <option>Cartoon</option>
+                            <option>Action</option>
+                        </select>
+                        &nbsp;&nbsp; Region：
+                        <select name="mcc" style="height:35px;">
+                            <option>All</option>
+                            <option>Mainland China</option>
+                            <option>Japan and Korea</option>
+                            <option>Europe and America</option>
+                            <option>United Kingdom</option>
+                            <option>Thailand</option>
+                        </select>
+                        &nbsp;&nbsp; Release time：
+                        <select name="mprice" style="height:35px;">
+                            <option>All</option>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <input type="submit" class="btnblue" value="搜索" />
+                    </h4>
+                </div>
+            </div>
+            <div id="comingID">
+                <dl class="guidetab fix" data-plugin="tab-nav">
+                    <dd class="cur"><span><a href="movietb.aspx"> </a></span></dd>
+                </dl>
+                <div data-plugin="tab-box">
+                    <div class="guidecont">
+                        <div class="recentmod">
+                            <i class="line"></i>
+                            @foreach (MvcModel.movieData item in ViewBag.movielist)
+                            {
+                                <dl class="tab1" data-index="0" data-parent-name="tab1">
+                                    <dt class="date" data-dt-name="tab1" data-index="0">
+                                        @item.mmtime<i class="holiday" style="display: none;"></i>
+                                    </dt>
+                                    <dd>
+                                        <ul>
+                                            <li data-id="240182" class="tab1" data-index="0" data-name="tab1">
+                                                <div class="moviebox">
+                                                    <a href="~/Home/Movie?Id=@item.Id" target="_blank">
+                                                        <img src="~/Upload/@item.mpic" width="135" height="190" />
+                                                    </a><h3>
+                                                        <a href="~/Home/Movie?Id=@item.Id" target="_blank">
+                                                            @item.mname
+                                                        </a>
+                                                    </h3>
+                                                    <p class="dataday">
+                                                        Release time：  @item.mmtime
+                                                    </p>
+                                                    <p>
+                                                        Genre：<a href="#" target="_blank"> @item.mtype</a>
+                                                    </p>
+                                                    <p>
+                                                        Starring：<a href="#" target="_blank"> @item.mting</a>
+                                                    </p>
+                                                    <p>
+                                                        Version：<a href="#" target="_blank">@item.mbrand</a>
+                                                    </p>
+                                                    <p>
+                                                        Region：<a href="#" target="_blank">@item.mcc</a>
+                                                    </p>
+                                                    <p>
+                                                        Introduction：  @item.mpress
+                                                    </p>
+                                                </div>
+                                                <div class="moviectrl">
+                                                    <div class="fr">
+                                                        <p class="wantBtnClass" data-want-id="240182">
+                                                            <a href="~/Home/Movie?Id=@item.Id" class="btngrey">Comment</a>
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            }
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    }
+</div>

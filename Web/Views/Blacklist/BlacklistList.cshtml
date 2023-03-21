@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "BlacklistList";
+    Layout = null;
+}
+
+@model System.Data.DataTable
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="~/admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="~/admin/css/sub.css" rel="stylesheet" type="text/css" />
+
+<div id="content">
+    <div class="tb1">
+        <table class="niunantab">
+            <tbody>
+                <tr>
+                    <th style="font-family: 'Times New Roman';">
+                        String
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Time
+                    </th>
+                    
+                    <th style="width: 160px; font-family: 'Times New Roman';">
+                        Operation
+                    </th>
+                </tr>
+                @foreach (System.Data.DataRow dr in Model.Rows)
+                {
+                    <tr>
+                        <td style="text-align: center;">
+                            @dr["thestr"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["thetime"]
+                        </td>
+                        
+                        <td style="text-align: center;">
+                            @Html.ActionLink("Edit", "BlacklistEdit", new { id = @dr["id"] })
+                            @Html.ActionLink("Delete", "BlacklistDelete", new { id = @dr["id"] })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>Movie review website</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/common/public.css" rel="stylesheet" />
+    <link href="~/css/index/index.css" rel="stylesheet" />
+</head>
+<body pn="M17_Index">
+    <div id="homeContentRegion">
+        <div id="beaderbar" data-headtype="2">
+            <div class="headbarout fixed">
+                <div class="headbar head-mini" id="headbar">
+                    <dl class="headbarnav" data-navs="0">
+                        <dd>
+                            <a href="~/Home/Index">Home page<i></i></a>
+                        </dd>
+                        <dd>
+                            <a href="~/Home/MovieList">Category<i></i></a>
+                        </dd>
+                    </dl>
+                    <div class="headtool" id="siginbox" style="z-index: 5; display: block;">
+                        <i class="line"></i>
+                        <div class="headunlogin">
+                            @if (@ViewBag.UserId != null)
+                            {
+                                <a href="~/Web/myorder.aspx">User：@ViewBag.UserName，</a><a href='~/Home/Login?nologin=0'>Log out</a>
+                            }
+                            else
+                            {
+                                <a href="~/Home/Login">Login<i></i></a> <em></em><a href="~/Home/Regsis">Signup</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headbg">
+            </div>
+            <div class="mtimebar" data-hang="hangout">
+            </div>
+        </div>
+        @RenderBody()
+        <div>
+            <div class="footout">
+                <span class="topline"></span>
+            </div>
+            <div class="db_foot">
+                <p>
+                    <span>Movie review website</span>Copyright 2023 <a href="~/Admin/Login">Admin login</a>
+                </p>
+                <div class="credible">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

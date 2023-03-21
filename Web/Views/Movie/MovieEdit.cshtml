@@ -1,0 +1,179 @@
+﻿@{
+    ViewBag.Title = "MovieEdit";
+    Layout = null;
+}
+
+@model MvcModel.movieData
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="~/admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="~/admin/css/sub.css" rel="stylesheet" type="text/css" />
+
+<div id="content">
+    @using (Html.BeginForm("MovieEdit", "Movie", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.ValidationSummary(true)
+        <table class="niunantab">
+            <tbody>
+
+                <tr>
+                    <td class="left_td">
+                        Movie name：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.mname, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.mname)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Image：
+                    </td>
+                    <td>
+                        <input type="file" name="uploadfile" />
+                        <img src="/upload/@Model.mpic" style="width:123px; height:96px;" />
+                        @Html.HiddenFor(model => model.mpic)
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.mpic)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Genre：
+                    </td>
+                    <td>
+                        <select name="mtype" style="height:35px;">
+                            <option>All</option>
+                            <option>Romance</option>
+                            <option>Science fiction</option>
+                            <option>Comedy</option>
+                            <option>Military</option>
+                            <option>Horror</option>
+                            <option>Action</option>
+                            <option>Cartoon</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Release time：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.mmtime, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.mmtime)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Description：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.mpress, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.mpress)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Score：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.mscore, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.mscore)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Director：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.maddress, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.maddress)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Starring：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.mting, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.mting)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Version：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.mbrand, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.mbrand)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Region：
+                    </td>
+                    <td>
+                        <select name="mcc" style="height:35px;">
+                            <option>All</option>
+                            <option>Mainland China</option>
+                            <option>Japan and Korea</option>
+                            <option>Europe and America</option>
+                            <option>United Kingdom</option>
+                            <option>Thailand</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Release time：
+                    </td>
+                    <td>
+                        <select name="mprice" style="height:35px;">
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        State：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.status, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.status)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Comment：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.turnurl, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.turnurl)</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <input type="submit" class="btn" value="Save" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    }
+</div>
+

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "E68xJOUZ8v/73+rTnjlZWa/jIWOaitcUj6mO0OZveZwuLPREx2fisHdAdXGJA/YV9dQQTRS5SsG/904WTc5dzw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hanwei Jiang\\Desktop\\476\\Web\\MvcModel\\MvcModel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hanwei Jiang\\.nuget\\packages\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
+    "C:\\Users\\Hanwei Jiang\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
+    "C:\\Users\\Hanwei Jiang\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.2.0\\microsoft.netcore.dotnethostpolicy.2.2.0.nupkg.sha512",
+    "C:\\Users\\Hanwei Jiang\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.2.0\\microsoft.netcore.dotnethostresolver.2.2.0.nupkg.sha512",
+    "C:\\Users\\Hanwei Jiang\\.nuget\\packages\\microsoft.netcore.platforms\\2.2.0\\microsoft.netcore.platforms.2.2.0.nupkg.sha512",
+    "C:\\Users\\Hanwei Jiang\\.nuget\\packages\\microsoft.netcore.targets\\2.0.0\\microsoft.netcore.targets.2.0.0.nupkg.sha512",
+    "C:\\Users\\Hanwei Jiang\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

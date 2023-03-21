@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "UsersList";
+    Layout = null;
+}
+
+@model System.Data.DataTable
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="~/admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="~/admin/css/sub.css" rel="stylesheet" type="text/css" />
+
+<div id="content">
+    <div class="tb1">
+        <table class="niunantab">
+            <tbody>
+                <tr>
+                    <th style="font-family: 'Times New Roman';">
+                        Account
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Password
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Name
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Note
+                    </th>
+                    <th style="width: 160px; font-family: 'Times New Roman';">
+                        Operation
+                    </th>
+                </tr>
+                @foreach (System.Data.DataRow dr in Model.Rows)
+                {
+                    <tr>
+                        <td style="text-align: center;">
+                            @dr["userid"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["userpwrd"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["username"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["usertype"]
+                        </td>
+                        <td style="text-align: center;">
+                            @Html.ActionLink("Edit", "UsersEdit", new { id = @dr["id"] })
+                            @Html.ActionLink("Delete", "UsersDelete", new { id = @dr["id"] })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

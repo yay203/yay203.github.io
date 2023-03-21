@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "UsersEdit";
+    Layout = null;
+}
+
+@model MvcModel.usersData
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="~/admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="~/admin/css/sub.css" rel="stylesheet" type="text/css" />
+
+
+<div id="content">
+    @using (Html.BeginForm("UsersEdit", "Users", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.ValidationSummary(true)
+        <table class="niunantab">
+            <tbody>
+                <tr>
+                    <td class="left_td">
+                        Account：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.userid, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.userid)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Password：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.userpwrd, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.userpwrd)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Name：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.username, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.username)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Level：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.usertype, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.usertype)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <input type="submit" class="btn" value="Save" />
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    }
+</div>
+

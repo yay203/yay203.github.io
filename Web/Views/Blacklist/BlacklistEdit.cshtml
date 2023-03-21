@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "BlacklistEdit";
+    Layout = null;
+}
+
+@model MvcModel.blacklistData
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="~/admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="~/admin/css/sub.css" rel="stylesheet" type="text/css" />
+
+<script src="~/My97DatePicker/WdatePicker.js"></script>
+<div id="content">
+    @using (Html.BeginForm("BlacklistEdit", "Blacklist", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.ValidationSummary(true)
+        <table class="niunantab">
+            <tbody>
+                <tr>
+                    <td class="left_td">
+                        String：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.thestr, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.thestr)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Time：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.thetime, new { @class = "inputtext", @onclick = "WdatePicker();" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.thetime)</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <input type="submit" class="btn" value="Save" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    }
+</div>
+

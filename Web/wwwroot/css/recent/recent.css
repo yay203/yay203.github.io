@@ -1,0 +1,563 @@
+﻿.movietopmod:after, .recentmod li:after
+{
+	content: ".";
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+.movietopmod, .recentmod li
+{
+	display: block;
+}
+.guidecont, .guidenote, .guideregion, .guidetab, .recenthot
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+.guidetab dd i, .guidetab dd span, .movietopmod .picbox .down em, .movietopmod .picbox .up em, .movietopmod .txtbox .elli, .recentmod .moviectrl .movievideo a .icovideo
+{
+	display: inline-block; *display:inline;position:relative;zoom:1;vertical-align:middle}
+.guidelist dd h3, .movietopmod .txtbox .elli, .movietopmod .txtbox h3, .movietopmod .txtbox h4, .recentmod .moviebox h3 a, .recentmod .moviebox h4 a
+{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.guideregion
+{
+	position: relative;
+}
+.guideregion .guidetit
+{
+	background: right bottom no-repeat;
+	height: 110px;
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 24px;
+	position: relative;
+}
+.guideregion .guidetit h4
+{
+	font-size: 28px;
+	line-height: 1;
+	padding-top: 54px;
+}
+.guideregion .guidetit h4 em
+{
+	font-size: 24px;
+	margin-left: 12px;
+}
+.guideregion .guidetit .guidelink
+{
+	width: 410px;
+	height: 105px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+}
+.guidelist h5
+{
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1;
+	padding-bottom: 18px;
+}
+.guidelist dl
+{
+	width: 1300px;
+	padding-bottom: 50px;
+}
+.guidelist dd
+{
+	width: 180px;
+	text-align: center;
+	float: left;
+	margin-right: 25px;
+	color: #666;
+}
+.guidelist dd .picbox
+{
+	position: relative;
+	display: block;
+}
+.guidelist dd .picbox .icovideo
+{
+	background: url(../../images/recent.png) no-repeat;
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+}
+.guidecont, .recentmod
+{
+	position: relative;
+	overflow: hidden;
+}
+.guidelist dd .picbox:hover .icovideo
+{
+	opacity: .8;
+	filter: alpha(opacity=80);
+}
+.guidelist dd h3
+{
+	font-size: 16px;
+	line-height: 1;
+	padding-top: 15px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.guidelist dd .btnbox
+{
+	padding-top: 16px;
+}
+.guidelist dd .btnbox a
+{
+	width: 98px;
+}
+.guidelist dd a.btngreen:hover
+{
+	background: #74ab34;
+}
+.guidelist dd .btngrey, .guidelist dd .btngrey:hover
+{
+	background: #fff;
+	color: #333;
+	border: 1px solid #333;
+}
+.guidelist dd .btnred, .guidelist dd .btnred:hover
+{
+	background: red;
+	color: red;
+	border: 1px solid #333;
+}
+.guidetab
+{
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.guidetab dd
+{
+	float: left;
+	margin-right: 90px;
+	text-align: center;
+	cursor: pointer;
+}
+.guidetab dd span
+{
+	padding-bottom: 12px;
+	margin-bottom: -2px;
+}
+.guidetab dd i
+{
+	background: url(../../images/recent.png) -44px 0 no-repeat;
+	width: 14px;
+	height: 16px;
+	top: -1px;
+	margin-left: 3px;
+}
+.guidetab dd.cur a, .guidetab dd:hover a
+{
+	color: #fc6a21;
+}
+.guidetab dd.cur span, .guidetab dd:hover span
+{
+	border-bottom: 3px solid #fc6a21;
+	padding-bottom: 12px;
+}
+.guidetab dd.cur i, .guidetab dd:hover i
+{
+	background-position: -58px 0;
+}
+.guidetab dd:hover span
+{
+	border-bottom: none;
+}
+.guidenote
+{
+	font-style: italic;
+	color: #999;
+	padding-bottom: 35px;
+}
+.guidecont
+{
+	padding-bottom: 80px;
+}
+.recentmod
+{
+	padding-left: 125px;
+	margin: -51px 0 80px;
+}
+.recentmod .line
+{
+	position: absolute;
+	left: 40px;
+	top: 0;
+	border-left: 1px dashed #d9d9d9;
+	padding-bottom: 32767px;
+	margin-bottom: -32767px;
+}
+.recentmod dl
+{
+	position: relative;
+	margin-top: 25px;
+}
+.recentmod dt
+{
+	background: #fff;
+	width: 120px;
+	left: -125px;
+	top: 15px;
+	font-size: 18px;
+	color: #999;
+	position: absolute;
+	line-height: 1;
+	padding: 15px 0;
+}
+.recentmod dt.date
+{
+	width: 83px;
+	text-align: center;
+	line-height: 1.3;
+}
+.recentmod dt i
+{
+	display: block;
+	font-size: 14px;
+	padding-top: 5px;
+}
+.recentmod dt i.holiday
+{
+	color: #fc6a21;
+}
+.recentmod dd
+{
+	border-top: 1px solid #e6e6e6;
+	position: relative;
+	margin-top: -1px;
+}
+.recentmod li
+{
+	padding-top: 25px;
+}
+.recentmod .moviebox
+{
+	width: 450px;
+	min-height: 190px;
+	float: left;
+	padding-left: 160px;
+	color: #666;
+	position: relative;
+}
+.recentmod .moviebox img
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.recentmod .moviebox h3
+{
+	font-size: 22px;
+	line-height: 1;
+	padding: 8px 0 5px;
+	font-weight: 400;
+}
+.recentmod .moviebox h4
+{
+	font-size: 13px;
+	font-weight: 400;
+}
+.recentmod .moviebox h3 a, .recentmod .moviebox h4 a
+{
+	display: block;
+}
+.recentmod .moviebox p
+{
+	font-size: 12px;
+	line-height: 1;
+	padding-bottom: 8px;
+}
+.recentmod .moviebox .dataday
+{
+	padding: 20px 0 15px;
+}
+.recentmod .moviectrl
+{
+	float: right;
+	padding-top: 38px;
+	color: #666;
+}
+.recentmod .moviectrl p
+{
+	margin-bottom: 10px;
+	text-align: center;
+}
+.recentmod .moviectrl p a
+{
+	width: 98px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+}
+.recentmod .moviectrl p a.btngrey
+{
+	width: 96px;
+	height: 28px;
+	line-height: 28px;
+}
+.recentmod .moviectrl p a.btngrey:hover
+{
+	background: #f4f4f4;
+	color: #333;
+	border: 1px solid #d9d9d9;
+}
+.recentmod .moviectrl p i
+{
+	color: #fc6a21;
+}
+.recentmod .moviectrl p a.btngreen:hover
+{
+	background: #74ab34;
+}
+.recentmod .moviectrl .movievideo
+{
+	padding-top: 46px;
+}
+.recentmod .moviectrl .movievideo a
+{
+	padding-right: 45px;
+}
+.recentmod .moviectrl .movievideo a .icovideo
+{
+	background: url(../../images/recent.png) -72px 0 no-repeat;
+	width: 17px;
+	height: 17px;
+	top: -1px;
+	margin-right: 3px;
+}
+.movietopmod .picbox
+{
+	background: #d4d4d4;
+	position: relative;
+	padding-left: 54px;
+	float: left;
+}
+.movietopmod .picbox i
+{
+	width: 54px;
+	font-size: 30px;
+	line-height: 30px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -15px;
+	text-align: center;
+	color: #fff;
+}
+.movietopmod .picbox .down, .movietopmod .picbox .up
+{
+	width: 54px;
+	position: absolute;
+	left: 0;
+	top: 70%;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+}
+.movietopmod .picbox .down em, .movietopmod .picbox .up em
+{
+	background: url(../../images/recent.png) -45px -20px no-repeat;
+	width: 10px;
+	height: 11px;
+	margin-right: 3px;
+	top: -1px;
+}
+.movietopmod .picbox .down em
+{
+	background-position: -45px -31px;
+}
+.movietopmod .txtbox
+{
+	width: 310px;
+	float: left;
+	color: #666;
+	position: relative;
+	margin-left: 25px;
+}
+.movietopmod .txtbox h4 a, .movietopmod .txtbox p a
+{
+	color: #666;
+}
+.movietopmod .txtbox h4 a:hover, .movietopmod .txtbox p a:hover
+{
+	color: #1970c8;
+}
+.movietopmod .txtbox h3
+{
+	font-size: 22px;
+	line-height: 1;
+	padding: 8px 0 5px;
+	font-weight: 400;
+}
+.movietopmod .txtbox h4
+{
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.movietopmod .txtbox p
+{
+	font-size: 12px;
+	line-height: 1;
+	padding-bottom: 8px;
+}
+.movietopmod .txtbox .dataday
+{
+	margin-bottom: 20px;
+	color: #333;
+	font-weight: 700;
+	font-size: 14px;
+}
+.movietopmod .txtbox .dataday i
+{
+	margin: 0 8px;
+	color: #666;
+}
+.movietopmod .txtbox .showday
+{
+	margin-bottom: 20px;
+}
+.movietopmod .txtbox .elli
+{
+	max-width: 185px;
+	margin-right: 6px;
+	top: -1px;
+	line-height: 1.2;
+}
+.movietopmod .txtbox .morelink
+{
+	color: #1e7dd7;
+}
+.movietopmod .gradebox
+{
+	width: 108px;
+	float: right;
+	color: #999;
+	padding-top: 77px;
+}
+.movietopmod .gradebox .point
+{
+	font-family: Verdana;
+	font-weight: 700;
+	color: #679c21;
+	font-size: 35px;
+	line-height: 1;
+	vertical-align: top;
+	padding: 0 0 8px 18px;
+}
+.movietopmod .gradebox .point em
+{
+	font-size: 20px;
+	font-weight: 700;
+	position: relative;
+	top: -14px;
+}
+.movietopmod .totalbox
+{
+	width: 175px;
+	float: right;
+	padding-top: 80px;
+	text-align: center;
+	position: relative;
+	color: #999;
+}
+.movietopmod .totalbox b
+{
+	width: 93px;
+	position: absolute;
+	top: 16px;
+	left: 50%;
+	margin-left: -47px;
+	font-weight: 400;
+	color: #ff8600;
+	font-size: 16px;
+	cursor: pointer;
+}
+.movietopmod .totalbox b em
+{
+	font-size: 24px;
+}
+.movietopmod .totalbox b i
+{
+	background: url(../../images/boxoffice.png) 0 -22px no-repeat;
+	width: 93px;
+	height: 20px;
+	display: block;
+	margin-top: 5px;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+	line-height: 20px;
+}
+.movietopmod .totalbox .totalnum
+{
+	font-size: 16px;
+	line-height: 1;
+	color: #333;
+	padding-bottom: 7px;
+}
+.movietopmod .totalbox .totalnum strong
+{
+	font-size: 33px;
+	line-height: 1;
+}
+.recenthot dd
+{
+	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+}
+.recenthot .moviectrl
+{
+	float: right;
+	padding-top: 38px;
+	color: #666;
+}
+.recenthot .moviectrl p
+{
+	margin-bottom: 10px;
+	text-align: center;
+}
+.recenthot .moviectrl p a
+{
+	width: 98px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+}
+.recenthot .moviectrl p a.btngrey
+{
+	width: 96px;
+	height: 28px;
+	line-height: 28px;
+}
+.recenthot .moviectrl p a.btngrey:hover
+{
+	background: #f4f4f4;
+	color: #333;
+	border: 1px solid #d9d9d9;
+}
+.recenthot .moviectrl p i
+{
+	color: #fc6a21;
+}
+.recenthot .moviectrl p a.btngreen:hover
+{
+	background: #74ab34;
+}

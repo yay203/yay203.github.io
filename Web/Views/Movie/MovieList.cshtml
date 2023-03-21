@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "MovieList";
+    Layout = null;
+}
+
+@model System.Data.DataTable
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="~/admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="~/admin/css/sub.css" rel="stylesheet" type="text/css" />
+
+<div id="content">
+    <div class="tb1">
+        <table class="niunantab">
+            <tbody>
+                <tr>
+                    <th style="font-family: 'Times New Roman';">
+                        Movie name
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Image
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Genre
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Release
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Score  
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Director
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Starring
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Version
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Region
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Release time
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        State
+                    </th>
+                    
+                    <th style="width: 160px; font-family: 'Times New Roman';">
+                        Operation
+                    </th>
+                </tr>
+                @foreach (System.Data.DataRow dr in Model.Rows)
+                {
+                    <tr>
+                        <td style="text-align: center;">
+                            @dr["mname"]
+                        </td>
+                        <td style="text-align: center;">
+                            <img src="~/Upload/@dr["mpic"]" width="100"/>
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["mtype"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["mmtime"]
+                        </td>
+                       
+                        <td style="text-align: center;">
+                            @dr["mscore"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["maddress"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["mting"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["mbrand"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["mcc"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["mprice"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["status"]
+                        </td>
+                        
+                        <td style="text-align: center;">
+                            @Html.ActionLink("Edit", "MovieEdit", new { id = @dr["id"] })
+                            @Html.ActionLink("Delete", "MovieDelete", new { id = @dr["id"] })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

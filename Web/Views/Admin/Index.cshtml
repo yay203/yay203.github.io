@@ -1,0 +1,272 @@
+﻿@{
+    ViewBag.Title = "Websitbackend";
+    Layout = null;
+}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="~/admin/Css/default.css" rel="stylesheet" type="text/css" />
+<link href="~/admin/Css/base.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="~/admin/js/themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="~/admin/js/themes/icon.css" />
+
+<script type="text/javascript" src="~/admin/js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript" src="~/admin/js/jquery.easyui.min.js"></script>
+
+<script type="text/javascript" src='~/admin/js/esay.js'> </script>
+
+<script type="text/javascript">
+
+    var _menus = {
+        "menus": [{
+            "menuid": "1",
+            "icon": "icon-sys",
+            "menuname": "User Management",
+            "menus": [{
+                "menuid": "11",
+                "menuname": "New users",
+                "icon": "icon-users",
+                "url": "../Users/UsersEdit"
+            },
+            {
+                "menuid": "12",
+                "menuname": "User list",
+                "icon": "icon-role",
+                "url": "../Users/UsersList"
+            }]
+        },
+        {
+            "menuid": "2",
+            "icon": "icon-sys",
+            "menuname": "Movie management",
+            "menus": [{
+                "menuid": "21",
+                "menuname": "Post movie",
+                "icon": "icon-nav",
+                "url": "../movie/movieEdit"
+            },
+            {
+                "menuid": "22",
+                "menuname": "Movie list",
+                "icon": "icon-nav",
+                "url": "../movie/movieList"
+            }]
+        },
+        {
+            "menuid": "4",
+            "icon": "icon-sys",
+            "menuname": "Score management",
+            "menus": [{
+                "menuid": "41",
+                "menuname": "Add rating",
+                "icon": "icon-nav",
+                "url": "../comment/commentEdit"
+            },
+            {
+                "menuid": "42",
+                "menuname": "Score list",
+                "icon": "icon-nav",
+                "url": "../comment/commentList"
+            }]
+        },
+        {
+            "menuid": "5",
+            "icon": "icon-sys",
+            "menuname": "Filterword management",
+            "menus": [{
+                "menuid": "51",
+                "menuname": "Add fillter word",
+                "icon": "icon-nav",
+                "url": "../blacklist/blacklistEdit"
+            },
+            {
+                "menuid": "52",
+                "menuname": "Filterword management",
+                "icon": "icon-nav",
+                "url": "../blacklist/blacklistList"
+            }]
+        }]
+    };
+
+    //Set login window
+    function openPwd() {
+        $('#w').window({
+            title: 'Change password',
+            width: 300,
+            modal: true,
+            shadow: true,
+            closed: true,
+            height: 160,
+            resizable: false
+        });
+    }
+    //Close login window
+    function closePwd() {
+        $('#w').window('close');
+    }
+
+    //modify password
+    function serverLogin() {
+        var $newpass = $('#txtNewPass');
+        var $rePass = $('#txtRePass');
+
+        if ($newpass.val() == '') {
+            msgShow('System prompt', 'Please enter password! ', 'warning');
+            return false;
+        }
+        if ($rePass.val() == '') {
+            msgShow('System prompt', 'Please enter password again！', 'warning');
+            return false;
+        }
+
+        if ($newpass.val() != $rePass.val()) {
+            msgShow('System prompt', 'Passwords does not match! please enter again', 'warning');
+            return false;
+        }
+
+        $.post('/ajax/editpassword.ashx?newpass=' + $newpass.val(), function (msg) {
+            msgShow('System prompt', 'Congratulations password Update Succeeded！<br>Your new password is：' + msg, 'info');
+            $newpass.val('');
+            $rePass.val('');
+            close();
+        })
+
+    }
+
+    $(function () {
+
+        openPwd();
+
+        $('#editpass').click(function () {
+            $('#w').window('open');
+        });
+
+        $('#btnEp').click(function () {
+            serverLogin();
+        })
+
+        $('#btnCancel').click(function () { closePwd(); })
+
+        $('#loginOut').click(function () {
+            $.messager.confirm('System prompt', 'Are you sure you want to log out?', function (r) {
+
+                if (r) {
+                    location.href = '../Admin/Login';
+                }
+            });
+        })
+    });
+
+
+</script>
+
+
+
+<body class="easyui-layout" style="overflow-y: hidden" fit="true" scroll="no">
+    <noscript>
+        <div style="position: absolute; z-index: 100000; height: 2046px; top: 0px; left: 0px;
+            width: 100%; background: white; text-align: center;">
+            <img src="~/admin/images/noscript.gif" alt='抱歉，请开启脚本支持！' />
+        </div>
+    </noscript>
+    <div id="loading-mask" style="position: absolute; top: 0px; left: 0px; width: 100%;
+        height: 100%; background: #D2E0F2; z-index: 20000">
+        <div id="pageloading" style="position: absolute; top: 50%; left: 50%; margin: -120px 0px 0px -120px;
+            text-align: center; border: 2px solid #8DB2E3; width: 200px; height: 40px; font-size: 14px;
+            padding: 10px; font-weight: bold; background: #fff; color: #15428B;">
+            <img src="~/admin/images/loading.gif" align="absmiddle" />
+            Loading, please wait...
+        </div>
+    </div>
+    <div region="north" split="true" border="false" class="header" style="background: url(../admin/images/hd.jpg) 0 0 repeat-x">
+        <span class="rightNav">
+            Welcome ! @ViewBag.UserName| <a href="~/Home/Index">Home page</a> | <a href="#" id="loginOut">
+                Safe logout
+            </a>
+        </span>
+        <div class="logo" style="font-size: 28px; font-weight: bold; margin-top: 10px;">
+            Website management system
+        </div>
+    </div>
+    <div region="south" split="true" style="height: 30px; background: #D2E0F2;">
+        <div class="footer">
+            Copyright © 2023  Website management system. All Rights Reserved
+        </div>
+    </div>
+    <div region="west" split="true" title="Navigation Menu" style="width: 180px;" id="west">
+        <div id="nav">
+            <!--  navigation content -->
+        </div>
+    </div>
+    <div id="mainPanle" region="center" style="background: #eee; overflow-y: hidden">
+        <div id="tabs" class="easyui-tabs" fit="true" border="false">
+            <div title="Welcome" style="padding: 20px; overflow: hidden;">
+                <h1 style="font-size: 18px; color: #444">
+                    <span class="red" style="font-size: 24px">admin</span> HELLO!
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!--Change password window -->
+    <div id="w" class="easyui-window" title="Change password" collapsible="false" minimizable="false"
+         maximizable="false" icon="icon-save" style="width: 300px; height: 150px; padding: 5px;
+        background: #fafafa;">
+        <div class="easyui-layout" fit="true">
+            <div region="center" border="false" style="padding: 10px; background: #fff; border: 1px solid #ccc;">
+                <table cellpadding="3">
+                    <tr>
+                        <td>
+                            New password：
+                        </td>
+                        <td>
+                            <input id="txtNewPass" type="Password" class="txt01" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Confirm password：
+                        </td>
+                        <td>
+                            <input id="txtRePass" type="Password" class="txt01" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div region="south" border="false" style="text-align: right; height: 30px; line-height: 30px;">
+                <a id="btnEp" class="easyui-linkbutton" icon="icon-ok" href="javascript:void(0)">Confirm</a>
+                <a id="btnCancel" class="easyui-linkbutton" icon="icon-cancel" href="javascript:void(0)">
+                    Cancel
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="mm" class="easyui-menu" style="width: 150px;">
+        <div id="tabupdate">
+            Refresh
+        </div>
+        <div class="menu-sep">
+        </div>
+        <div id="close">
+            Close
+        </div>
+        <div id="closeall">
+            Close all
+        </div>
+        <div id="closeother">
+            Close all except this one
+        </div>
+        <div class="menu-sep">
+        </div>
+        <div id="closeright">
+            Close all on the right side of the current page
+        </div>
+        <div id="closeleft">
+            Close all on the left side of the current page
+        </div>
+        <div class="menu-sep">
+        </div>
+        <div id="exit">
+           Exit
+        </div>
+    </div>
+</body>

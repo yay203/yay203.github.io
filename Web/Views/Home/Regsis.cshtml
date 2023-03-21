@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Regsis";
+}
+<link href="~/css/common/register.css" rel="stylesheet" />
+<link href="~/css/common/public.css" rel="stylesheet" />
+<div id="app">
+    @using (Html.BeginForm("Regsis", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="regin_out">
+            <div class="regin_inner fix">
+                <div class="regin_left">
+                    <h5>
+                        User Signup
+                    </h5>
+                    <dl>
+                        <dd>
+                            <div class="reg_txt ">
+                                <input type="text" name="userid" placeholder="Pls enter Username" />
+                                <p class="reg_errtxt" id="reg_mobile_msg">
+                                </p>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="reg_txt ">
+                                <input type="password" name="userpwrd" maxlength="20" placeholder="Pls enter password" />
+                                <div class="password_tog " id="showPwdBtn">
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="reg_txt ">
+                                <input type="text" name="username" maxlength="20" placeholder="Pls enter you name" />
+                                <div class="password_tog " id="showPwdBtn">
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                        </dd>
+                        <dt class="reg_btn">
+                            <input type="submit" class="btn_blue" value="Signup" />
+                        </dt>
+                        <span style="color: Red; font-size: 12px;">
+                            @ViewBag.Error
+                        </span>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,29 @@
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\MvcModel\bin\Debug\netcoreapp2.2\MvcModel.deps.json
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\MvcModel\bin\Debug\netcoreapp2.2\MvcModel.dll
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\MvcModel\bin\Debug\netcoreapp2.2\MvcModel.pdb
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.csprojAssemblyReference.cache
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.csproj.CoreCompileInputs.cache
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.AssemblyInfoInputs.cache
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.AssemblyInfo.cs
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.dll
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.pdb
+C:\Users\wohen\Desktop\Web(3)\Web\MvcModel\bin\Debug\netcoreapp2.2\MvcModel.deps.json
+C:\Users\wohen\Desktop\Web(3)\Web\MvcModel\bin\Debug\netcoreapp2.2\MvcModel.dll
+C:\Users\wohen\Desktop\Web(3)\Web\MvcModel\bin\Debug\netcoreapp2.2\MvcModel.pdb
+C:\Users\wohen\Desktop\Web(3)\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.csproj.AssemblyReference.cache
+C:\Users\wohen\Desktop\Web(3)\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wohen\Desktop\Web(3)\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.AssemblyInfoInputs.cache
+C:\Users\wohen\Desktop\Web(3)\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.AssemblyInfo.cs
+C:\Users\wohen\Desktop\Web(3)\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.csproj.CoreCompileInputs.cache
+C:\Users\wohen\Desktop\Web(3)\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.dll
+C:\Users\wohen\Desktop\Web(3)\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.pdb
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\bin\Debug\netcoreapp2.2\MvcModel.deps.json
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\bin\Debug\netcoreapp2.2\MvcModel.dll
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\bin\Debug\netcoreapp2.2\MvcModel.pdb
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.csproj.AssemblyReference.cache
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.AssemblyInfoInputs.cache
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.AssemblyInfo.cs
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.csproj.CoreCompileInputs.cache
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.dll
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Debug\netcoreapp2.2\MvcModel.pdb

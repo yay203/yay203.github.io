@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "CommentList";
+    Layout = null;
+}
+
+@model System.Data.DataTable
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="~/admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="~/admin/css/sub.css" rel="stylesheet" type="text/css" />
+
+<div id="content">
+    <div class="tb1">
+        <table class="niunantab">
+            <tbody>
+                <tr>
+                    <th style="font-family: 'Times New Roman';">
+                        Module
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        ID
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        User
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Time
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Score
+                    </th>
+                    <th style="font-family: 'Times New Roman';">
+                        Comment
+                    </th>
+                    
+                    <th style="width: 160px; font-family: 'Times New Roman';">
+                        Operation
+                    </th>
+                </tr>
+                @foreach (System.Data.DataRow dr in Model.Rows)
+                {
+                    <tr>
+                        <td style="text-align: center;">
+                            @dr["moduel"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["mid"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["userid"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["thedate"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["thescore"]
+                        </td>
+                        <td style="text-align: center;">
+                            @dr["thecon"]
+                        </td>
+                        
+                        <td style="text-align: center;">
+                            @Html.ActionLink("Edit", "CommentEdit", new { id = @dr["id"] })
+                            @Html.ActionLink("Delete", "CommentDelete", new { id = @dr["id"] })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

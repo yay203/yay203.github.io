@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "New Page";
+}
+ 
+
+<form asp-controller="Home" role="form" asp-action="New" enctype="multipart/form-data" method="post">
+ 
+    <div class="form-group">
+ 
+        <input type="file" name="IdCardImg" />
+        <p class="help-block">Upload</p>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+

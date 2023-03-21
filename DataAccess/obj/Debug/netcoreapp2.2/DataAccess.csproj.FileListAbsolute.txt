@@ -1,0 +1,29 @@
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.deps.json
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.AssemblyInfoInputs.cache
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.AssemblyInfo.cs
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.csprojAssemblyReference.cache
+C:\Users\wohen\Desktop\Web(3)\Web\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.deps.json
+C:\Users\wohen\Desktop\Web(3)\Web\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\wohen\Desktop\Web(3)\Web\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\wohen\Desktop\Web(3)\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.csproj.AssemblyReference.cache
+C:\Users\wohen\Desktop\Web(3)\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wohen\Desktop\Web(3)\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.AssemblyInfoInputs.cache
+C:\Users\wohen\Desktop\Web(3)\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.AssemblyInfo.cs
+C:\Users\wohen\Desktop\Web(3)\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\wohen\Desktop\Web(3)\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\wohen\Desktop\Web(3)\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\Hanwei Jiang\Desktop\476\Web\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.deps.json
+C:\Users\Hanwei Jiang\Desktop\476\Web\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\Hanwei Jiang\Desktop\476\Web\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\Hanwei Jiang\Desktop\476\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.csproj.AssemblyReference.cache
+C:\Users\Hanwei Jiang\Desktop\476\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hanwei Jiang\Desktop\476\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Hanwei Jiang\Desktop\476\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.AssemblyInfo.cs
+C:\Users\Hanwei Jiang\Desktop\476\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Hanwei Jiang\Desktop\476\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\Hanwei Jiang\Desktop\476\Web\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.pdb

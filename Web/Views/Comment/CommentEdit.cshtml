@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "CommentEdit";
+    Layout = null;
+}
+
+@model MvcModel.commentData
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="~/admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="~/admin/css/sub.css" rel="stylesheet" type="text/css" />
+
+
+<div id="content">
+    @using (Html.BeginForm("CommentEdit", "Comment", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.ValidationSummary(true)
+        <table class="niunantab">
+            <tbody>
+                <tr>
+                    <td class="left_td">
+                        Module：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.moduel, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.moduel)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        ID：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.mid, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.mid)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        User：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.userid, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.userid)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Time：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.thedate, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.thedate)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Score：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.thescore, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.thescore)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left_td">
+                        Comment：
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.thecon, new { @class = "inputtext" })
+                        <span style="color:red;">@Html.ValidationMessageFor(model => model.thecon)</span>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <input type="submit" class="btn" value="Save" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    }
+</div>
+

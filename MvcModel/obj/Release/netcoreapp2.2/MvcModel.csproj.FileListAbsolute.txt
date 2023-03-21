@@ -1,0 +1,10 @@
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\bin\Release\netcoreapp2.2\MvcModel.deps.json
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\bin\Release\netcoreapp2.2\MvcModel.dll
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\bin\Release\netcoreapp2.2\MvcModel.pdb
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Release\netcoreapp2.2\MvcModel.csproj.AssemblyReference.cache
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Release\netcoreapp2.2\MvcModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Release\netcoreapp2.2\MvcModel.AssemblyInfoInputs.cache
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Release\netcoreapp2.2\MvcModel.AssemblyInfo.cs
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Release\netcoreapp2.2\MvcModel.csproj.CoreCompileInputs.cache
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Release\netcoreapp2.2\MvcModel.dll
+C:\Users\Hanwei Jiang\Desktop\476\Web\MvcModel\obj\Release\netcoreapp2.2\MvcModel.pdb

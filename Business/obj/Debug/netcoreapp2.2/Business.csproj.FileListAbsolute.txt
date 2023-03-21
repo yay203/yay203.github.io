@@ -1,0 +1,44 @@
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\bin\Debug\netcoreapp2.2\Business.deps.json
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\bin\Debug\netcoreapp2.2\Business.dll
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\bin\Debug\netcoreapp2.2\Business.pdb
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\bin\Debug\netcoreapp2.2\MvcModel.dll
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\bin\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\bin\Debug\netcoreapp2.2\MvcModel.pdb
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\obj\Debug\netcoreapp2.2\Business.csprojAssemblyReference.cache
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\obj\Debug\netcoreapp2.2\Business.csproj.CoreCompileInputs.cache
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfoInputs.cache
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfo.cs
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\obj\Debug\netcoreapp2.2\Business.csproj.CopyComplete
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\obj\Debug\netcoreapp2.2\Business.dll
+C:\Users\IT_HUANGXIN\Desktop\Web\Web\Business\obj\Debug\netcoreapp2.2\Business.pdb
+C:\Users\wohen\Desktop\Web(3)\Web\Business\bin\Debug\netcoreapp2.2\Business.deps.json
+C:\Users\wohen\Desktop\Web(3)\Web\Business\bin\Debug\netcoreapp2.2\Business.dll
+C:\Users\wohen\Desktop\Web(3)\Web\Business\bin\Debug\netcoreapp2.2\Business.pdb
+C:\Users\wohen\Desktop\Web(3)\Web\Business\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\wohen\Desktop\Web(3)\Web\Business\bin\Debug\netcoreapp2.2\MvcModel.dll
+C:\Users\wohen\Desktop\Web(3)\Web\Business\bin\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\wohen\Desktop\Web(3)\Web\Business\bin\Debug\netcoreapp2.2\MvcModel.pdb
+C:\Users\wohen\Desktop\Web(3)\Web\Business\obj\Debug\netcoreapp2.2\Business.csproj.AssemblyReference.cache
+C:\Users\wohen\Desktop\Web(3)\Web\Business\obj\Debug\netcoreapp2.2\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wohen\Desktop\Web(3)\Web\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfoInputs.cache
+C:\Users\wohen\Desktop\Web(3)\Web\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfo.cs
+C:\Users\wohen\Desktop\Web(3)\Web\Business\obj\Debug\netcoreapp2.2\Business.csproj.CoreCompileInputs.cache
+C:\Users\wohen\Desktop\Web(3)\Web\Business\obj\Debug\netcoreapp2.2\Business.csproj.CopyComplete
+C:\Users\wohen\Desktop\Web(3)\Web\Business\obj\Debug\netcoreapp2.2\Business.dll
+C:\Users\wohen\Desktop\Web(3)\Web\Business\obj\Debug\netcoreapp2.2\Business.pdb
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\bin\Debug\netcoreapp2.2\Business.deps.json
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\bin\Debug\netcoreapp2.2\Business.dll
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\bin\Debug\netcoreapp2.2\Business.pdb
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\bin\Debug\netcoreapp2.2\MvcModel.dll
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\bin\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\bin\Debug\netcoreapp2.2\MvcModel.pdb
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\obj\Debug\netcoreapp2.2\Business.csproj.AssemblyReference.cache
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\obj\Debug\netcoreapp2.2\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfoInputs.cache
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfo.cs
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\obj\Debug\netcoreapp2.2\Business.csproj.CoreCompileInputs.cache
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\obj\Debug\netcoreapp2.2\Business.csproj.CopyComplete
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\obj\Debug\netcoreapp2.2\Business.dll
+C:\Users\Hanwei Jiang\Desktop\476\Web\Business\obj\Debug\netcoreapp2.2\Business.pdb
